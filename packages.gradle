@@ -1,0 +1,12 @@
+ext.excludePackages = [
+        'com/google/thirdparty/**/**.class',
+        'com/google/common/escape/**.class',
+        'com/google/common/eventbus/**.class',
+        'com/google/common/graph/**.class',
+        'com/google/common/html/**.class',
+        'com/google/common/id/**.class',
+        'com/google/common/math/**.class',
+        'com/google/common/net/**.class',
+        'com/google/common/reflect/**.class',
+        'com/google/common/xml/**.class',
+]

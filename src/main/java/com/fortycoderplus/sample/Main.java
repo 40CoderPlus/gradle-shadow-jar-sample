@@ -18,8 +18,9 @@
  * limitations under the License.
  */
 
-package com.fortycoderplus.template;
+package com.fortycoderplus.sample;
 
+import com.google.common.collect.Lists;
 import java.util.stream.Stream;
 
 public class Main {
@@ -28,5 +29,6 @@ public class Main {
         Stream.of("Gradle Single Module Template".split(" "))
                 .map(word -> word.repeat(3))
                 .forEach(System.out::println);
+        Lists.newArrayList("1", "2", "3").forEach(System.out::println);
     }
 }

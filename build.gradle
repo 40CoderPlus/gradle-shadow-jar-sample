@@ -81,6 +81,7 @@ tasks.withType(JavaCompile) {
 apply from: 'packages.gradle'
 
 shadowJar {
+    archiveClassifier  = 'shade'
     dependencies {
         include(dependency('com.google.guava:guava:31.1-jre'))
     }
@@ -120,7 +121,6 @@ publishing {
             }
         }
         shadow(MavenPublication) { publication ->
-            artifactId = project.name + '-shade'
             project.shadow.component(publication)
         }
     }

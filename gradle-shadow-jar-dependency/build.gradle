@@ -1,0 +1,27 @@
+plugins{
+    id 'java'
+    id 'idea'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        credentials {
+            username "$nexusUsername"
+            password "$nexusPassword"
+        }
+        url "$nexusRelease"
+    }
+    maven {
+        credentials {
+            username "$nexusUsername"
+            password "$nexusPassword"
+        }
+        url "$nexusSnapshot"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fortycoderplus.sample:gradle-shadow-jar-sample:1.0.0:shade'
+}

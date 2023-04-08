@@ -1,1 +1,3 @@
 rootProject.name = 'gradle-shadow-jar-sample'
+include 'gradle-shadow-jar-dependency'
+

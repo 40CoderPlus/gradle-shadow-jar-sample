@@ -140,8 +140,8 @@ sonarqube {
     properties {
         property 'sonar.dependencyCheck.jsonReportPath', 'build/reports/dependency-check-report.json'
         property 'sonar.dependencyCheck.htmlReportPath', 'build/reports/dependency-check-report.html'
-        property 'sonar.projectName', 'gradle-single-module-template'
-        property 'sonar.projectKey', 'gradle-single-module-template'
+        property 'sonar.projectName', 'gradle-shadow-jar-dependency'
+        property 'sonar.projectKey', 'gradle-shadow-jar-dependency'
     }
 }
 
